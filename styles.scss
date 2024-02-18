@@ -1,0 +1,186 @@
+*{ 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
+    
+    body{
+        min-height: 100vh;
+        background-color: rgb(98, 140, 204);
+        color: #000000;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .wrapper{
+        h1{
+            font-size: 50px;
+            margin-bottom: 50px;
+        }
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .card{
+            min-height: 500px;
+            min-width: 350px;
+            border-radius: 20px;
+            background-color: #f1f1f1;
+            box-shadow: 0 3px 5px black;
+            border: solid 2px rgb(0, 0, 0);
+            form{
+                padding: 20px;
+                font-size: 20px;
+                .box{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-evenly;
+                    margin-top: 10px;
+                    input{
+                        width: 60%;
+                        padding: 5px;
+                        text-align: center;
+                        font-size: 20px;
+                        border-radius: 5px;
+                        border: solid 2px rgb(59, 76, 228);
+                    }
+                    button{
+                        width: 30%;
+                        font-size: 15px;
+                        padding: 10px;
+                        text-transform: uppercase;
+                        border: transparent;
+                        border-radius: 5px;
+                        color: white;
+                        font-weight: bold;
+                        background-color: rgb(59, 76, 228);
+                        transition: background-color .3s;
+                    }
+                    button:hover{
+                        background-color: rgb(33, 44, 139);
+                       cursor: pointer;
+                    }
+                }
+            }
+            .pokemon{
+                &__box{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    
+                    &-nameId{
+                        margin: 10px;
+                        text-transform: uppercase;
+                        font-size: 25px;
+                        span:last-of-type{
+                            font-weight: bold;
+                        }
+                    }
+                    &-size{
+                        width: 80%;
+                        margin-top: 5px;
+                        font-size: 13px;
+                        span{
+                            margin-right: 10px;
+                            font-weight: normal;
+                        }
+                    }
+                    &-image{
+                        width: 300px;
+                        height: 200px;
+                        border-radius: 10px;
+                        box-shadow: inset 0px 2px 3px black;
+                        img{
+                            
+                           width: 200px;
+                           margin-left: 50px;
+                        }
+                    }
+                  
+                      
+            
+                        #types{
+                            width: 300px;
+                            margin: 10px;
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: space-evenly;
+                            align-items: center;
+                            visibility: hidden;
+                            
+                            
+                            span{
+                            padding: 5px 10px;
+                            text-transform: uppercase;
+                            font-weight: bold;
+                            font-size: 13px;
+                            color: white;
+                            border-radius: 5px;
+                            box-shadow: 0 1px 1px black;
+                            background-color: rgb(252, 145, 5);
+                            }
+                        }
+                    
+                }
+                &__stats{
+                    h2{
+                        margin: 0 0 10px;
+                    }
+                    width: 100%;
+                    padding: 0 20px 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    table{
+                        width: 100%;
+                        
+                        td:first-of-type{
+                            color: white;
+                            border-top-left-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                        }
+                        td:last-of-type{
+                            border-top-right-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                        }
+                        td{
+                            font-weight: bold;
+                            padding: 5px 10px ;
+                        }
+                        .value{
+                            width: 60%;
+                            text-align: center; 
+                            box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.555); 
+                        }
+                        .hp{
+                            box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.555);
+                            background-color: rgb(69, 139, 69);
+                        }
+                        .at{
+                            box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.555);
+                            background-color: rgb(211, 88, 88);
+                        }
+                        .def{
+                            box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.555);
+                            background-color: rgb(90, 90, 179);
+                        }
+                        .sat{
+                            box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.555);
+                            background-color: rgb(124, 9, 9);
+                        }
+                        .sdef{
+                            box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.555);
+                            background-color: rgb(38, 38, 102);
+                        }
+                        .spd{
+                            box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.555);
+                            background-color: rgb(161, 161, 6);
+                        }
+                    }
+                }
+            }
+        }
+    }

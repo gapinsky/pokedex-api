@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+
+
+    <div class="wrapper">
+        <h1>Pokédex</h1>
+        <div class="card">
+            <form id="search-form">
+                <label for="text">Search Pokémon for name or ID</label>
+                <div class="box">
+                    <input type="text" id="search-input" required>
+                    <button id="search-button">Search</button>
+                </div>
+            </form>
+            <div class="pokemon">
+                <div class="pokemon__box">
+                    <div class="pokemon__box-nameId">
+                        <span id="pokemon-name"></span>
+                        <span id="pokemon-id"></span>
+                    </div>
+                    <div class="pokemon__box-image"></div>
+                    <div class="pokemon__box-size"><span id="weight"></span><span id="height"></span></div>
+                    <div id="types">
+                    </div>
+
+                </div>
+                <div class="pokemon__stats">
+                    <h2>Base Stats</h2>
+                    <table>
+                        <tr>
+                            <td class="hp">HP</td>
+                            <td id="hp" class="value"></td>
+                        </tr>
+                        <tr>
+                            <td class="at">Attack</td>
+                            <td id="attack" class="value"></td>
+                        </tr>
+                        <tr>
+                            <td class="def">Defense</td>
+                            <td id="defense" class="value"></td>
+                        </tr>
+                        <tr>
+                            <td class="sat">Sp. Attack</td>
+                            <td id="special-attack" class="value"></td>
+                        </tr>
+                        <tr>
+                            <td class="sdef">Sp. Defense</td>
+                            <td id="special-defense" class="value"></td>
+                        </tr>
+                        <tr>
+                            <td class="spd">Speed</td>
+                            <td id="speed" class="value"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+   
+    <script src="script.js"></script>
+</body>
+
+</html>
